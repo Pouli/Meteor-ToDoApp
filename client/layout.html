@@ -1,0 +1,32 @@
+<head>
+  <meta charset="utf-8">
+  <title>Pouli's ToDo</title>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="fixed-container">
+      {{#if currentUser}}
+        {{> dashboard}}
+      {{else}}
+        {{#if register}}
+          {{> registerForm}}
+        {{else}}
+          {{> loginForm}}
+        {{/if}}
+      {{/if}}
+    </div>
+  </div>
+  <div class="client-body">
+    <div class="main-title">
+      Todo app
+    </div>
+    {{> taskForm}}
+    {{> hideCompleted}}
+    <ul class="task-list">
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+  </div>
+</body>

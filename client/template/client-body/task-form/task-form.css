@@ -1,0 +1,19 @@
+.input-name {
+  width: 25%;
+  margin: 1% 0;
+  padding: 0 1%;
+}
+.input-description {
+  width: 40%;
+  resize: none;
+  padding: 0 1%;
+}
+.input-submit {
+  margin: 1% 0;
+  padding: 1%;
+  color: #27ae60;
+  border: solid #27ae60 1px;
+}
+.input-submit:focus {
+  outline: none;
+}

@@ -1,0 +1,10 @@
+<template name="loginForm">
+  <div class="fixed-container">
+    <form class="login-form">
+      <input type="email" name="mail" class="login-email" required>
+      <input type="password" name="password" class="login-password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+      <input type="submit" class="login-submit" value="Login">
+    </form>
+    <div class="sign-up">Register Now</div>
+  </div>
+</template>

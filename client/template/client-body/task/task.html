@@ -1,0 +1,10 @@
+<template name="task">
+  <li class="task {{#if state}}completed{{/if}}">
+    <div class="content">
+      <span class="task-name">{{name}}</span>
+      <span class="task-description">{{description}}</span>
+    </div>
+    <input type="checkbox" checked="{{state}}" class="task-state">
+    <span class="task-delete"><i class="fa fa-trash-o fa-lg"></i></span>
+  </li>
+</template>

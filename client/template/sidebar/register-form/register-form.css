@@ -1,0 +1,25 @@
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.register-email {
+  margin: 1% 0;
+  padding: 1%;
+}
+.register-password {
+  padding: 1%;
+}
+.register-submit {
+  margin: 1% 0;
+  padding: 1%;
+  color: #8e44ad;
+  border: solid #8e44ad 1px;
+}
+.register-submit:focus {
+  outline: none;
+}
+.log-in {
+  font-size: 0.6vw;
+}
